@@ -118,7 +118,7 @@ const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav links
 for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function() {
+  navigationLinks[i].addEventListener("click", function () {
     // Remove the 'active' class from all pages and navigation links
     for (let j = 0; j < pages.length; j++) {
       pages[j].classList.remove("active");
@@ -126,8 +126,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
     // Add the 'active' class to the clicked navigation link
     this.classList.add("active");
-    // Get the target page from the clicked link's data-page attribute
-    const targetPage = this.dataset.navLink;
+    // Get the target page from the clicked link's data-nav-link attribute
+    const targetPage = this.getAttribute("data-nav-link");
     // Add the 'active' class to the target page
     const targetPageElement = document.querySelector(`[data-page="${targetPage}"]`);
     targetPageElement.classList.add("active");
@@ -135,3 +135,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
     window.scrollTo(0, 0);
   });
 }
+
