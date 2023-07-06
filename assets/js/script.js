@@ -114,20 +114,20 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav links
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     const targetPage = this.getAttribute("data-nav-link");
+    const targetPageElement = document.querySelector(`[data-page="${targetPage}"]`);
 
     // Hide all pages
+    const pages = document.querySelectorAll("article[data-page]");
     for (let j = 0; j < pages.length; j++) {
       pages[j].classList.remove("active");
     }
 
     // Show the target page
-    const targetPageElement = document.querySelector(`[data-page="${targetPage}"]`);
     targetPageElement.classList.add("active");
 
     // Remove active class from all navigation links
@@ -142,4 +142,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
     window.scrollTo(0, 0);
   });
 }
+
 
