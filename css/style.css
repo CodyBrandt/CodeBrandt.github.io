@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-featured-menu .fh5co-item a, #fh5co-gallery .fh5co-item a, #fh5co-reservation-form .fh5co-item a {
   display: block; /* Makes the <a> tag a block-level element */
   text-decoration: none; /* Removes underline from links */
-  background: #fff; /* Ensures background color is applied */
+  /*background: #fff; Ensures background color is applied */
 }
 
 #fh5co-gallery .fh5co-gallery_item {
