@@ -1789,4 +1789,15 @@ textarea {
   color: #000 !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.full-width-container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-width-header,
+.full-width-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
