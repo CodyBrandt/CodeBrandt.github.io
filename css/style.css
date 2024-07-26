@@ -488,7 +488,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-featured-menu .fh5co-item, #fh5co-gallery .fh5co-item, #fh5co-reservation-form .fh5co-item {
   float: left;
   width: 100%;
-  backround: #fff;
+  background: #fff;
 }
 #fh5co-featured-menu .fh5co-item.margin_top, #fh5co-gallery .fh5co-item.margin_top, #fh5co-reservation-form .fh5co-item.margin_top {
   margin-top: 150px;
@@ -511,6 +511,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-featured-menu .fh5co-item img, #fh5co-gallery .fh5co-item img, #fh5co-reservation-form .fh5co-item img {
   margin-bottom: 30px;
+}
+
+#fh5co-featured-menu .fh5co-item a, #fh5co-gallery .fh5co-item a, #fh5co-reservation-form .fh5co-item a {
+  display: block; /* Makes the <a> tag a block-level element */
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits text color from parent */
+  background: #fff; /* Ensures background color is applied */
 }
 
 #fh5co-gallery .fh5co-gallery_item {
