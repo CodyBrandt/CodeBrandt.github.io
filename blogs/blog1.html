@@ -76,6 +76,21 @@
 		<!-- </div> -->
 	</nav>
 
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/whitebackground.png);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<h1>First Blog Post!</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
 	<div id="fh5co-featured-menu" class="fh5co-section">
 		<div class="container">
 			<div class="row">
@@ -88,9 +103,11 @@
 				
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
 					<div class="fh5co-item animate-box">
-						<img src="images/otherprojects.jpg" class="img-responsive" alt="Broken link, please fix">
-						<h3><a href="blogs/blog1.html">First blog post!</a></h3>
-						<p>Just a little welcome message for everyone!</p>
+						<h3>Hello everyone!</h3>
+						<p>Welcome to the second brain, a place for Information Security. My name is Cody (CoNist-) and I am a Security Analyst at a fintech company. I didn't think my path would lead me to information security, to be totally honest I enjoyed playing video games but I never went further to figure out how it "works". It wasn't until I watched a Youtube video from <a href="https://www.youtube.com/@_JohnHammond" target="_blank">John Hammond</a> where he went through a TryHackMe machine, cracking into and getting root that my interest in whatever he was showing was. I started watching video after video, and I thought to myself "I dont entirely know what he is doing, but I am gonna figure out how I can." That then began my journey into IT and then Information Security. It's been almost three years since then and my journey has been incredible, the quest for knowledge has challenging at time but its been incrediblely worth it.</p>
+
+                        <h3>Where I started?</h3>
+                        <p>My first job out of college was working with at my families masonry company. During the roughly four years of working, I learned one thing...hard labor is hard. Just kidding, but seriously it taught me not to take anything for granted, and nothing is handed to you. I started at the way bottom, scoping shovel after shovel of mortar (the substance that sticks the bricks or blocks to one another) and stocking bricks or blocks it just depended on what job site I was on at the time.</p>
 					</div>
 				</div>
 			</div>
@@ -173,8 +190,20 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/zoomerang.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		Zoomerang
+      .config({
+        maxHeight: 600,
+        maxWidth: 900,
+        bgColor: '#000',
+        bgOpacity: .85
+      })
+      .listen('[data-trigger="zoomerang"]')
+	</script>
 
 	</body>
 </html>
