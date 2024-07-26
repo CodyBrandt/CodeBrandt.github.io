@@ -1788,3 +1788,7 @@ textarea {
 .bootstrap-datetimepicker-widget {
   color: #000 !important;
 }
+
+p.white {
+  color: #ffffff !important;
+}
