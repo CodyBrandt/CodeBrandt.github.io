@@ -1789,29 +1789,6 @@ textarea {
   color: #000 !important;
 }
 
-.full-width-container {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.full-width-header,
-.full-width-menu {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.full-height {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full width */
-  text-align: center; /* Center text horizontally within the container */
-}
-
-.full-height-content {
-  padding: 20px; /* Adjust as needed */
-  max-width: 800px; /* Limit the width for readability */
+.white {
+  color:#FFFF
 }
